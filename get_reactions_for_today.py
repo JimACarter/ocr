@@ -10,7 +10,6 @@ def main():
         day_data = json.load(f)
 
     day = time.strftime('%a').upper()
-    day = "WED"
     text = day_data[day].replace(" {} ".format(day), ' ')
     responses = select_unicode_responses(text)
     print(responses)
