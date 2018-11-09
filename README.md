@@ -1,11 +1,11 @@
 # Set-up
 ```
-sudo apt-get install tesseract-ocr
+sudo apt-get install tesseract-ocr imagemagick libsm6
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-sudo vim /etc/ImageMagick-6/policy.xml
+sudo vim /etc/ImageMagick/policy.xml
     <!-- <policy domain="coder" rights="none" pattern="MVG" /> -->
     <policy domain="coder" rights="read|write" pattern="PDF" />
     <policy domain="coder" rights="read|write" pattern="LABEL" />
