@@ -12,7 +12,6 @@ def main():
     day = time.strftime('%a').upper()
     text = day_data[day].replace(" {} ".format(day), ' ')
     responses = select_unicode_responses(text)
-    print(responses)
     with open(today_responses_path, "w") as f:
         json.dump(responses, f)
 
